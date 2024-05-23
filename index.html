@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>Challenger de practica...
+            <br />
+            <br />tomar el proyecto de TASKs LIST<br />
+            <br />hacer las siguientes modificaciones:
+            <br />- adicionar la opcion para editar las tareas
+            <br />- hacer la busqueda de una tarea especifica
+            <br />- adicionar una opcion para eliminar todas las tareas enseguida.
+        </p>
+        <h1>Lista de Tareas</h1>
+        <form id="task-form">
+            <input type="hidden" id="task-id" value=""/>
+            <input type="text" id="task-input" placeholder="Nueva tarea..." />
+            <button type="submit" class="btn-add">Agregar</button>
+        </form>
+        <div id="contain-lista">
+            <hr />
+            <input type="text" id="input-filter" name="input-filter" placeholder="Filtrar tareas">            
+            <ul id="task-list"></ul>
+            <button type="button" id="btn-delete-all" class="btn-delete-all">Eliminar todas las tareas</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
