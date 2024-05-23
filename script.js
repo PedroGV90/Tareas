@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (e.target.classList.contains('delete-edit')) {
             getTaskById(taskId);
         } else if (e.target.tagName === 'LI') {
-            toggleComplete(taskId);
+            toggleComplete(taskId); 
         }
     });
 
